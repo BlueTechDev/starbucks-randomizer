@@ -1,0 +1,27 @@
+header {
+    background-color: #ff6b00; /* Orange */
+    color: #fff; /* White */
+    padding: 20px 0; /* Adjusted padding */
+    text-align: center;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Add margin to separate the logo and title */
+  }
+  
+  .logo {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0; /* Reset margin */
+  }
+  p {
+    font-size: 16px; /* Adjust font size */
+    line-height: 1.5; /* Improve readability with line-height */
+  }

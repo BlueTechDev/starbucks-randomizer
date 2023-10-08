@@ -1,14 +1,142 @@
-/* Base styles */
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  font-family: 'Pixelify Sans';
 }
 
-.portal-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-color: #FFA500; /* Fall orange color */
-  overflow: hidden;
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(./Components/assets/coffee.jpg);
+  background-size: cover; /* Automatically fit the image to cover the page */
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Keep footer at the bottom */
+}
+
+header {
+  padding: 20px 0; /* Increased padding */
+  text-align: center; /* Center header content */
+}
+
+.header-content {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  text-align: center; /* Center paragraph text */
+  margin: 10px 0;
+}
+
+.main-content {
+  flex-grow: 1; /* Expand main content to fill available space */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center main content vertically */
+  padding: 20px;
+}
+
+.randomizer-container {
+  max-width: 100%; /* Make it full width */
+  text-align: center; /* Center content inside container */
+}
+
+/* Adjust font sizes and margins for buttons */
+#random-order,
+#random-drink,
+#randomize-btn,
+#drink-btn,
+#customize-btn,
+#hot-btn,
+#cold-btn,
+#refresh-btn,
+#tea-btn,
+#frappe-btn,
+#reset-btn {
+  font-size: 18px;
+  margin: 5px;
+}
+
+.loading-icon {
+  font-size: 40px;
+  margin: 10px;
+}
+
+footer {
+  padding: 20px;
+  font-size: 14px;
+  text-align: center; /* Center footer content */
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+}
+
+footer #disclaimer {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Add this media query for landscape orientation */
+@media screen and (orientation: landscape) {
+  body {
+    background-size: contain;
+    background-position: center;
+  }
+
+  header {
+    padding: 10px 0;
+  }
+
+  .header-content {
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .randomizer-container {
+    max-width: 100%;
+  }
+
+  /* Adjust font sizes and margins for landscape orientation */
+  #random-order,
+  #random-drink,
+  #randomize-btn,
+  #drink-btn,
+  #customize-btn,
+  #hot-btn,
+  #cold-btn,
+  #refresh-btn,
+  #tea-btn,
+  #frappe-btn,
+  #reset-btn {
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  .loading-icon {
+    font-size: 30px;
+    margin: 10px;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  footer #disclaimer {
+    font-size: 6px;
+  }
 }

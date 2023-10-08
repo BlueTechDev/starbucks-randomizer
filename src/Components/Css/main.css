@@ -1,0 +1,134 @@
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Center both horizontally and vertically */
+}
+
+.randomizer-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 400px;
+  /* Remove margin: 0 auto; */
+  /* The centering is now handled by the main element */
+}
+  
+  /* Example focus style for buttons */
+  button:focus {
+    outline: 2px solid #ff6b00; /* Orange outline */
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #random-order,
+  #random-drink {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  #randomize-btn,
+  #drink-btn,
+  #customize-btn,
+  #addToHomeScreenButton {
+    background-color: #ff6b00; /* Orange */
+    color: #fff; /* White */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block; /* Add this line to make the buttons inline */
+    margin-left: 10px; /* Add this line to add some spacing between buttons */
+  }
+  
+  #hot-btn,
+  #cold-btn,
+  #refresh-btn,
+  #tea-btn,
+  #frappe-btn,
+  #seasonal-btn, #logout-btn {
+    background-color: #ff6b00; /* Orange */
+    color: #fff; /* White */
+    padding: 10px 15px; /* Reduce padding for smaller width */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Slightly reduce font size for mobile */
+    margin-right: 10px; /* Add some right margin to separate buttons */
+    margin-bottom: 15px; /* Add some bottom margin to create vertical spacing */
+  }
+  
+  #hot-btn,
+  #cold-btn {
+    background-color: #ff6b00; /* Orange */
+    color: #fff; /* White */
+    padding: 10px 15px; /* Reduce padding for smaller width */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Slightly reduce font size for mobile */
+    margin-right: 10px; /* Add some right margin to separate buttons */
+    margin-bottom: 10px; /* Add some bottom margin to create vertical spacing */
+  }
+  
+  #customize-btn,
+  #reset-btn {
+    background-color: #ff6b00; /* Orange */
+    color: #fff; /* White */
+    padding: 10px 15px; /* Reduce padding for smaller width */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Slightly reduce font size for mobile */
+    margin-right: 10px; /* Add some right margin to separate buttons */
+    margin-bottom: 10px; /* Add some bottom margin to create vertical spacing */
+  }
+  
+  #hot-btn,
+  #cold-btn,
+  #refresh-btn,
+  #tea-btn,
+  #frappe-btn,
+  #seasonal-btn {
+    display: none;
+  }
+  
+  #loading-icon {
+    display: none; /* Hide the star icon by default */
+  }
+  
+  .loading-icon {
+    color: #ff6b00; /* Orange */
+    font-size: 54px; /* Adjust the size of the loading icon */
+    animation: spin 2s linear infinite; /* Apply the spinning animation */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  #reset-btn {
+    display: none;
+    background-color: #ff6b00; /* Orange */
+    color: #fff; /* White */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block; /* Add this line to make the buttons inline */
+    margin-left: 10px; /* Add this line to add some spacing between buttons */
+  }

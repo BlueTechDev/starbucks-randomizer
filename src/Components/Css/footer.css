@@ -1,0 +1,16 @@
+/* Updated footer styles for positioning at the bottom */
+footer {
+  background-color: #ff6b00; /* Orange */
+  color: #fff; /* White */
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer #disclaimer {
+  font-style: italic;
+  font-size: 8px;
+}
