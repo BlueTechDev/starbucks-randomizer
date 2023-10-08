@@ -1,12 +1,16 @@
 import React from 'react';
-import StarbucksRandomizer from './RandomOrder'; // Adjust the import path to match your file structure
+import './App.css';
+import Header from './Components/Header';
+import Main from './Components/Main';
+import Footer from './Components/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <main>
-        <StarbucksRandomizer />
-      </main>
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }
